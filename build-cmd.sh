@@ -7,7 +7,7 @@ set -x
 # make errors fatal
 set -e
 
-URIPARSER_VERSION="0.8.2"
+URIPARSER_VERSION="0.8.4"
 URIPARSER_SOURCE_DIR="uriparser"
 
 if [ -z "$AUTOBUILD" ] ; then 
