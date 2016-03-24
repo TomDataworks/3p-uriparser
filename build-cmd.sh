@@ -119,7 +119,7 @@ pushd "$URIPARSER_SOURCE_DIR"
             # Default target to 32-bit
             opts="${TARGET_OPTS:--m32}"
 
-            HARDENED="-fstack-protector-strong -D_FORTIFY_SOURCE=2"
+            HARDENED="-fstack-protector -D_FORTIFY_SOURCE=2"
 
             # Handle any deliberate platform targeting
             if [ -z "$TARGET_CPPFLAGS" ]; then
@@ -175,7 +175,7 @@ pushd "$URIPARSER_SOURCE_DIR"
             # Default target to 64-bit
             opts="${TARGET_OPTS:--m64}"
 
-            HARDENED="-fstack-protector-strong -D_FORTIFY_SOURCE=2"
+            HARDENED="-fstack-protector -D_FORTIFY_SOURCE=2"
 
             # Handle any deliberate platform targeting
             if [ -z "$TARGET_CPPFLAGS" ]; then
